@@ -1,8 +1,14 @@
+import React from "react";
 import "./App.css";
+
+import { Button, DatePicker } from 'antd';
 
 function App() {
   return (
-    <div className="App"></div>
+    <div className="App">
+      <Button type="primary">PRESS ME</Button>
+      <DatePicker placeholder="select date" />
+    </div>
   );
 }
 

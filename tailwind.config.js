@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 import keepPreset from "keep-react/preset";
 
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+// module.exports = {
+//   content: [],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// };
 
 export default {
   content: [
