@@ -1,14 +1,23 @@
 import React from "react";
 import "./App.css";
 import Table from "./components/table";
-
-// import { Button, DatePicker } from 'antd';
+// import DropdownMenu from "./components/dropdownMenu";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <header></header>
+        <header>
+          <div>
+            <p>Region: </p>
+            <div>
+              {/* <DropdownMenu /> */}
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </header>
 
         <main>
           <Table />
