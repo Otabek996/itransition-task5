@@ -1,13 +1,19 @@
 import React from "react";
 import "./App.css";
+import Table from "./components/table";
 
-import { Button, DatePicker } from 'antd';
+// import { Button, DatePicker } from 'antd';
 
 function App() {
   return (
     <div className="App">
-      <Button type="primary">PRESS ME</Button>
-      <DatePicker placeholder="select date" />
+      <div className="container">
+        <header></header>
+
+        <main>
+          <Table />
+        </main>
+      </div>
     </div>
   );
 }
