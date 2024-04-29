@@ -5,6 +5,7 @@ import "./App.css";
 import Table from "./components/Table";
 import DropdownMenu from "./components/DropdownMenu";
 import ErrorsSlider from "./components/ErrorsSlider";
+import ButtonExport from "./components/ButtonExport";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
 
           <div></div>
 
-          <div></div>
+          <div>
+            <ButtonExport />
+          </div>
         </header>
 
         <main>
