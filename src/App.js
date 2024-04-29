@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Table from "./components/table";
-// import DropdownMenu from "./components/dropdownMenu";
+import DropdownMenu from "./components/dropdownMenu";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <div>
             <p>Region: </p>
             <div>
-              {/* <DropdownMenu /> */}
+              <DropdownMenu />
             </div>
           </div>
           <div></div>
