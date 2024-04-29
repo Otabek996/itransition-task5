@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Col, Row } from "antd";
+
 import "./App.css";
 
 import Table from "./components/Table";
@@ -11,34 +13,38 @@ import ButtonExport from "./components/ButtonExport";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <header>
-          <div>
-            <p>Region: </p>
-            <div>
-              <DropdownMenu />
-            </div>
-          </div>
+      <Row>
+        <Col span={20} offset={2}>
+          <div className="container">
+            <header className="header">
+              <div className="box">
+                <p>Region: </p>
+                <div>
+                  <DropdownMenu />
+                </div>
+              </div>
 
-          <div>
-            <p>Errors: </p>
-            <ErrorsSlider />
-          </div>
+              <div className="box">
+                <p>Errors: </p>
+                <ErrorsSlider />
+              </div>
 
-          <div>
-            <p>Seed: </p>
-            <SeedInput />
-          </div>
+              <div className="box">
+                <p>Seed: </p>
+                <SeedInput />
+              </div>
 
-          <div>
-            <ButtonExport />
-          </div>
-        </header>
+              <div className="box">
+                <ButtonExport />
+              </div>
+            </header>
 
-        <main>
-          <Table />
-        </main>
-      </div>
+            <main>
+              <Table />
+            </main>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 }
