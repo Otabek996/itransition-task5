@@ -5,6 +5,7 @@ import "./App.css";
 import Table from "./components/Table";
 import DropdownMenu from "./components/DropdownMenu";
 import ErrorsSlider from "./components/ErrorsSlider";
+import SeedInput from "./components/SeedInput";
 import ButtonExport from "./components/ButtonExport";
 
 function App() {
@@ -24,7 +25,10 @@ function App() {
             <ErrorsSlider />
           </div>
 
-          <div></div>
+          <div>
+            <p>Seed: </p>
+            <SeedInput />
+          </div>
 
           <div>
             <ButtonExport />
