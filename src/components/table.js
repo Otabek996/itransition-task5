@@ -2,7 +2,7 @@ import React from "react";
 
 import { Table } from "antd";
 
-export default function TableCreator () {
+export default function TableCreator() {
   return <Table dataSource={dataSource} columns={columns} />;
 }
 

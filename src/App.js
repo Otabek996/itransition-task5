@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import Table from "./components/table";
-import DropdownMenu from "./components/dropdownMenu";
+import Table from "./components/Table";
+import DropdownMenu from "./components/DropdownMenu";
 
 function App() {
   return (
