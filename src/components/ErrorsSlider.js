@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Col, InputNumber, Row, Slider, Space } from 'antd';
+import { Col, InputNumber, Row, Slider, Space } from "antd";
 
 const IntegerStep = () => {
   const [inputValue, setInputValue] = useState(1);
@@ -15,7 +15,7 @@ const IntegerStep = () => {
           min={1}
           max={10}
           onChange={onChange}
-          value={typeof inputValue === 'number' ? inputValue : 0}
+          value={typeof inputValue === "number" ? inputValue : 0}
         />
       </Col>
       <Col span={4}>
@@ -23,7 +23,7 @@ const IntegerStep = () => {
           min={1}
           max={1000}
           style={{
-            margin: '0 16px',
+            margin: "0 16px",
           }}
           value={inputValue}
           onChange={onChange}
@@ -36,7 +36,7 @@ const IntegerStep = () => {
 const ErrorsSlider = () => (
   <Space
     style={{
-      width: '100%',
+      width: "100%",
     }}
     direction="vertical"
   >
