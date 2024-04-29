@@ -1,7 +1,10 @@
 import React from "react";
+
 import "./App.css";
+
 import Table from "./components/Table";
 import DropdownMenu from "./components/DropdownMenu";
+import ErrorsSlider from "./components/ErrorsSlider";
 
 function App() {
   return (
@@ -14,8 +17,14 @@ function App() {
               <DropdownMenu />
             </div>
           </div>
+
+          <div>
+            <p>Errors: </p>
+            <ErrorsSlider />
+          </div>
+
           <div></div>
-          <div></div>
+
           <div></div>
         </header>
 
