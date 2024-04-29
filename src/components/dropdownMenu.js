@@ -1,40 +1,44 @@
 import React from "react";
 
-import { Menu } from "antd";
+import { Dropdown, Space } from "antd";
+
+const menuActiveChanger = (e) => {
+  items.forEach((element) => {
+    element.disabled = false;
+  })
+
+  e.disabled = true;
+
+  console.log(e);
+};
 
 const items = [
   {
-    key: "sub1",
-    label: "COUNTRY NAME",
-    children: [
-      {
-        key: "1",
-        label: "Option 1 country",
-      },
-      {
-        key: "2",
-        label: "Option 2 country",
-      },
-      {
-        key: "3",
-        label: "Option 3 country",
-      },
-    ],
+    label: "1st menu item",
+    key: "1",
+    disabled: true,
+  },
+  {
+    label: "2nd menu item",
+    key: "2",
+    disabled: false,
+  },
+  {
+    label: "3rd menu item",
+    key: "3",
+    disabled: false,
   },
 ];
 
-const DropdownMenu = () => {
-  return (
-    <Menu
-      style={{
-        width: 256,
-      }}
-      defaultSelectedKeys={["1"]}
-      defaultOpenKeys={["sub1"]}
-      mode="inline"
-      items={items}
-    />
-  );
+const menuProps = {
+  items,
+  onClick: menuActiveChanger,
 };
+
+const DropdownMenu = () => (
+  <Space wrap>
+    <Dropdown.Button menu={menuProps}>Dropdown</Dropdown.Button>
+  </Space>
+);
 
 export default DropdownMenu;
