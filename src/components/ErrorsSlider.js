@@ -12,7 +12,7 @@ const IntegerStep = () => {
     <Row>
       <Col span={12}>
         <Slider
-          min={1}
+          min={0}
           max={10}
           onChange={onChange}
           value={typeof inputValue === "number" ? inputValue : 0}
@@ -20,7 +20,7 @@ const IntegerStep = () => {
       </Col>
       <Col span={4}>
         <InputNumber
-          min={1}
+          min={0}
           max={1000}
           style={{
             margin: "0 16px",
